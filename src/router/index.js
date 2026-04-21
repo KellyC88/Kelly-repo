@@ -2,11 +2,13 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../components/Home.vue'
 import LogIn from '../components/LogIn.vue'
 import Subscribe from '../components/Subscribe.vue'
+import productdetails from '../components/productdetails.vue'
 
 const routes = [
     { path: '/', name: 'Home', component: Home },
     { path: '/LogIn', name: 'LogIn', component: LogIn },
-    { path: '/Subscribe' , name: 'Subscribe' , component: Subscribe }
+    { path: '/Subscribe' , name: 'Subscribe' , component: Subscribe },
+    { path: '/productdetails' , name: 'productdetails' , component: productdetails }
 ]
 
 const router = createRouter({

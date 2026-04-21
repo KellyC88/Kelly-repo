@@ -11,7 +11,8 @@ import Home from './components/Home.vue'
 import LogIn from './components/LogIn.vue'
 import './assets/normalize.css'
 import Subscribe from './components/Subscribe.vue'
-
+import productdetails from './components/productdetails.vue' 
+ 
 export default {
   name: 'App',
   components: {

@@ -8,7 +8,8 @@
         <router-link class="brand_name" :to="{ name: 'Home' }">Wabisabi</router-link>
        </div>
         <div class="nav_list">
-          <a  class="categorylist" href="#" onclick="toggledropdown()">Category</a>
+           <a class="list" href="#category">Category</a>
+          <!-- <a  class="categorylist" href="#" onclick="toggledropdown()">Category</a>
               <select name="" id="category">
                 <option value="Oatmeal">Oatmeal</option>
                 <option value="Breakfast">Breakfast</option>
@@ -16,7 +17,7 @@
                 <option value="Dessert">Dessert</option>
                 <option value="Lunch">Lunch</option>
                 <option value="Dinner">Dinner</option>
-              </select>
+              </select> -->
           <router-link class="list" :to="{ name: 'Subscribe' }">Subscribe</router-link>
           <!-- <a class="list" href="#subscribe">Subscribe</a> -->
           <a class="list" href="#contact">Contact</a>
@@ -40,29 +41,30 @@
   <div class="product_set1" ref="productSet1">
     <h3 class="topic">Most Popular</h3>
     <div class="box">
-      <div class="img_container">
+      <router-link class="img_container" id="product1" :to="{name:'productdetails'}">
         <div class="img_overlay">
           <div class="img_text">NAME</div>
         </div>
         <a href="#!" ><img class="img" src="../assets/product8.jpg"></a>
-      </div>
-      <div class="img_container">
+      </router-link>
+      <router-link class="img_container" id="product2" :to="{name:'productdetails'}">
         <div class="img_overlay">
           <div class="img_text">NAME</div>
         </div>
         <a href="#!" ><img class="img" src="../assets/product8.jpg"></a>
-      </div><div class="img_container">
+      </router-link>
+      <router-link class="img_container" id="product3" :to="{name:'productdetails'}">
         <div class="img_overlay">
           <div class="img_text">NAME</div>
         </div>
         <a href="#!" ><img class="img" src="../assets/product8.jpg"></a>
-      </div>
-      <div class="img_container">
+      </router-link>
+      <router-link class="img_container" id="product4" :to="{name:'productdetails'}">
         <div class="img_overlay">
           <div class="img_text">NAME</div>
         </div>
         <a href="#!" ><img class="img" src="../assets/product8.jpg"></a>
-      </div>
+      </router-link>
     </div>
   </div>
   <div class="intro_box">
@@ -168,8 +170,20 @@ export default {
       if (this.$refs.productSet2) observer.observe(this.$refs.productSet2);
       if (this.$refs.productSet3) observer.observe(this.$refs.productSet3);
     }
+  },
+  data() {
+    return {
+      products:[
+        {id:1, name:'product1', msg: oatmeal, img:'../assets/product8.jpg'},
+        {id:2, name:'product2', msg: sourdough, img:'../assets/product8.jpg'},
+        {id:3, name:'product3', msg: salad, img:'../assets/product8.jpg'},
+        {id:4, name:'product4', msg: cookie, img:'../assets/product8.jpg'},
+      ]
+    }
   }
 }
+
+
 </script>
 
 
