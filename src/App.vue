@@ -1,13 +1,7 @@
 <template>
   <div id="app">
-    RouterLink
     <RouterView/>
-     <Home/>
-     <LogIn/>
-     <Subscribe/>
-     <productdetails/>
   </div>
-  <!-- <Home msg="Vite + Vue" /> -->
 </template>
 
 <script>
@@ -25,7 +19,8 @@ export default {
     LogIn,
     Subscribe,
     productdetails,
-    RouterLink
+    RouterLink,
+    RouterView
   }
 }
 </script>

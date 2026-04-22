@@ -40,7 +40,12 @@
 
 <script>
 export default {
-  name: 'Subscribe'
+  name: 'Subscribe',
+  data() {
+    return {
+      email: ''
+    }
+  }
 }
 </script>
 
