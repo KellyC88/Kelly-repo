@@ -41,27 +41,27 @@
   <div class="product_set1" ref="productSet1">
     <h3 class="topic">Most Popular</h3>
     <div class="box">
-      <router-link class="img_container" id="product1" :to="{name:'productdetails'}">
+      <router-link class="img_container" id="product1" :to="{name:'ProductDetails', params:{id:1}}">
         <div class="img_overlay">
-          <div class="img_text">NAME</div>
+          <div class="img_text">OATMEAL</div>
         </div>
         <a href="#!" ><img class="img" src="../assets/product8.jpg"></a>
       </router-link>
-      <router-link class="img_container" id="product2" :to="{name:'productdetails'}">
+      <router-link class="img_container" id="product2" :to="{name:'ProductDetails', params:{id:2}}">
         <div class="img_overlay">
-          <div class="img_text">NAME</div>
+          <div class="img_text">SOURDOUGH</div>
         </div>
         <a href="#!" ><img class="img" src="../assets/product8.jpg"></a>
       </router-link>
-      <router-link class="img_container" id="product3" :to="{name:'productdetails'}">
-        <div class="img_overlay">
-          <div class="img_text">NAME</div>
+      <router-link class="img_container" id="product3" :to="{name:'ProductDetails', params:{id:3}}">
+        <div class="img_overlay"> 
+          <div class="img_text">SALAD</div>
         </div>
         <a href="#!" ><img class="img" src="../assets/product8.jpg"></a>
       </router-link>
-      <router-link class="img_container" id="product4" :to="{name:'productdetails'}">
+      <router-link class="img_container" id="product4" :to="{name:'ProductDetails', params:{id:4}}">
         <div class="img_overlay">
-          <div class="img_text">NAME</div>
+          <div class="img_text">COOKIE</div>
         </div>
         <a href="#!" ><img class="img" src="../assets/product8.jpg"></a>
       </router-link>
@@ -174,10 +174,10 @@ export default {
   data() {
     return {
       products:[
-        {id:1, name:'product1', msg: 'oatmeal', img:'../assets/product8.jpg'},
-        {id:2, name:'product2', msg: 'sourdough', img:'../assets/product8.jpg'},
-        {id:3, name:'product3', msg: 'salad', img:'../assets/product8.jpg'},
-        {id:4, name:'product4', msg: 'cookie', img:'../assets/product8.jpg'},
+        {id:1, name:'oatmeal'},
+        {id:2, name:'sourdough'},
+        {id:3, name:'salad'},
+        {id:4, name:'cookie'},
       ]
     }
   }

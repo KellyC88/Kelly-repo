@@ -9,7 +9,7 @@ import Home from './components/Home.vue'
 import LogIn from './components/LogIn.vue'
 import './assets/normalize.css'
 import Subscribe from './components/Subscribe.vue'
-import productdetails from './components/productdetails.vue' 
+import ProductDetails from './components/productdetails.vue' 
 import { RouterLink, RouterView } from 'vue-router'
  
 export default {
@@ -18,7 +18,7 @@ export default {
     Home,
     LogIn,
     Subscribe,
-    productdetails,
+    ProductDetails,
     RouterLink,
     RouterView
   }
